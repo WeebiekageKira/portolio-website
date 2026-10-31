@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    /* de ruimte buiten het HTML-element is 0 */
+    padding: 0;
+    /* de ruimte binnen het HTML-element is 0 */
+    box-sizing: border-box;
+    /* de afmeting van het HTML-element is inclussief de padding en de border */
+}
+
+header {
+    background-color: rgba(255, 10, 75, 0.1);
+    color: yellow;
+    text-align: center;
+    
+}
+
+body {
+    /*hier bepaalt wat gestyled moet worden 
+    display: flex;
+    justify-content: center;
+    align-items: center;*/
+
+    min-height: 100vh;
+    background-color: #7c2585;
+    Color: red;
+    /*text kleur*/
+}
+
+main { /*container*/
+    background-color: green;
+    /* width: 300px;
+    height: 200px; */
+
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+section { /*container item*/
+    display: flex;
+    background-color: rgba(255, 0, 0, 1);
+    color: white;
+    flex-basis: calc(100% / 3 - 40px / 3);
+    flex-grow: 0; /*niet krimpen of groeien*/
+    flex-shrink: 0;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    
+    
+}
+
+img {
+    Width: 300px;
+    /* kan ook in procenten zijn, betreft percentage waarin die zit */
+    height: auto;
+    border-radius: 100%;
+    /*hoekje radius voor cirkel*/
+    border-style: dotted;
+    object-fit: cover;
+}
+
+ul, ol {
+    display: inline-block;
+    text-align: center;
+}
+li {
+    
+    text-align: center;
+}
+h2{
+    font-family: "mudstone-serif", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
