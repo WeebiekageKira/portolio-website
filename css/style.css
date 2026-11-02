@@ -30,13 +30,9 @@ body {
 
 main { /*container*/
     background-color: green;
-    /* width: 300px;
-    height: 200px; */
-
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-
 }
 
 section { /*container item*/
@@ -48,9 +44,7 @@ section { /*container item*/
     flex-shrink: 0;
     align-content: center;
     flex-direction: column;
-    text-align: center;
-    
-    
+    text-align: center; 
 }
 
 img {
@@ -60,17 +54,18 @@ img {
     border-radius: 100%;
     /*hoekje radius voor cirkel*/
     border-style: dotted;
-    object-fit: cover;
+    object-fit: cover;       
 }
 
 ul, ol {
     display: inline-block;
     text-align: center;
 }
-li {
-    
+
+li {  
     text-align: center;
 }
+
 h2{
     font-family: "mudstone-serif", sans-serif;
     font-weight: 900;
